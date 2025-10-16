@@ -39,7 +39,7 @@ export default function SamuraiPortfolioV7() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 4000)
+    }, 2000)
 
     return () => clearTimeout(timer)
   }, [])
@@ -74,7 +74,6 @@ export default function SamuraiPortfolioV7() {
         <SkillsSection />
         <TrophyRoom />
         <TestimonialsSection />
-        <BlogSection />
         <ContactSection />
         <Footer />
       </main>
@@ -202,18 +201,22 @@ function AboutSection() {
 function ProjectsSection() {
   const projects = [
     {
-      title: "AI-Powered Dashboard",
-      description: "Modern analytics platform with machine learning insights and real-time data visualization",
-      tech: ["React", "Python", "TensorFlow", "D3.js"],
-      image: "/placeholder.svg?height=300&width=500",
+      title: "Korpor app",
+      description: "Korpor is a mobile application that helps users manage and grow their investments through AI-driven insights and secure blockchain integration. It offers portfolio management, personalized recommendations, and an AI chatbot for user assistance. Built with Node.js, MongoDB, and Solidity, Korpor ensures transparency, security, and a seamless investment experience.",
+      tech: ["React", "node.js", "MySql", "solidity" ,"Python","React Native","tailwind css","typescript","web3"],
+      image: "/korpor.jpeg",
       featured: true,
+      github: "https://github.com/Assil10/Korpor_PFE", // 🧠 Add this
+     demo: "https://ai-dashboard-demo.vercel.app", 
     },
     {
-      title: "Blockchain DeFi Platform",
-      description: "Decentralized finance application with smart contracts and yield farming",
-      tech: ["Next.js", "Solidity", "Web3", "TypeScript"],
-      image: "/placeholder.svg?height=300&width=500",
+      title: "Chess analyzer",
+      description: "A Python tool for analyzing chess PGN games, highlighting brilliant moves, blunders, and providing performance insights",
+      tech: ["Python"],
+      image: "/chess analyzer.png",
       featured: false,
+      github: "https://github.com/Assil10/chess-analyzer", // 🧠 Add this
+    demo: "https://ai-dashboard-demo.vercel.app", 
     },
     {
       title: "Neural Network Visualizer",
@@ -221,6 +224,17 @@ function ProjectsSection() {
       tech: ["Vue.js", "Three.js", "Python", "FastAPI"],
       image: "/placeholder.svg?height=300&width=500",
       featured: false,
+      github: "https://github.com/yourusername/ai-dashboard", // 🧠 Add this
+    demo: "https://ai-dashboard-demo.vercel.app", 
+    },
+    {
+      title: "LumaSkin",
+      description: "LumaSkin is a skincare tracking app with AI-powered analysis. Built with Next.js, MongoDB authentication, and Cloudinary image uploads. Users can track their skincare journey, analyze skin conditions, and receive personalized recommendations through a modern interface.",
+      tech: ["Nextjs", "Python","typescript"],
+      image: "/lumaskin 2.png",
+      featured: true,
+      github: "https://github.com/Assil10/LumaSkin", // 🧠 Add this
+    demo: "https://ai-dashboard-demo.vercel.app", 
     },
   ]
 
@@ -276,9 +290,7 @@ function ProjectsSection() {
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className={`w-full object-cover group-hover:scale-110 transition-transform duration-700 ${
-                      project.featured ? "h-64" : "h-48"
-                    }`}
+                    className={"w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-red-500/30 via-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
@@ -312,22 +324,31 @@ function ProjectsSection() {
                     ))}
                   </div>
                   <div className="flex gap-3">
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="border-red-500 text-red-500 hover:bg-gradient-to-r hover:from-red-500 hover:to-orange-500 hover:text-white dark:hover:text-black bg-transparent group/btn"
-                    >
-                      <Github className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform" />
-                      Code
-                    </Button>
-                    <Button
-                      size="sm"
-                      className="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white group/btn"
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-                      Live Demo
-                    </Button>
-                  </div>
+  {project.github && (
+    <a href={project.github} target="_blank" rel="noopener noreferrer">
+      <Button
+        size="sm"
+        variant="outline"
+        className="border-red-500 text-red-500 hover:bg-gradient-to-r hover:from-red-500 hover:to-orange-500 hover:text-white dark:hover:text-black bg-transparent group/btn"
+      >
+        <Github className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform" />
+        Code
+      </Button>
+    </a>
+  )}
+
+  {project.demo && (
+    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+      <Button
+        size="sm"
+        className="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white group/btn"
+      >
+        <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+        Live Demo
+      </Button>
+    </a>
+  )}
+</div>
                 </div>
               </Card>
             </motion.div>
@@ -619,10 +640,10 @@ function Footer() {
             七転び八起き
           </motion.p>
           <p className="dark:text-gray-500 text-gray-600 text-sm">
-            "Fall seven times, rise eight times" - Japanese Proverb
+            "Fall seven times, rise eight times" 
           </p>
           <p className="dark:text-gray-600 text-gray-500 text-xs mt-4">
-            © 2024 Assil Khaldi. Crafted with discipline and passion.
+            © 2025 Assil Khaldi. Crafted with discipline and passion.
           </p>
         </motion.div>
       </div>

@@ -158,7 +158,7 @@ export default function HeroSection() {
             className={`text-lg md:text-xl font-light ${theme === "dark" ? "text-gray-300" : "text-gray-700"}`}
             whileHover={{ scale: 1.02 }}
           >
-            Creative Developer & AI Enthusiast
+            Full Stack Developer & AI Enthusiast
           </motion.p>
 
           {/* Profile Image - Commented out until you add your image */}
@@ -229,7 +229,7 @@ export default function HeroSection() {
             transition={{ duration: 1, delay: 1 }}
           >
             <motion.a
-              href="https://linkedin.com/in/assil-khaldi"
+              href="www.linkedin.com/in/assilkhaldi"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full border-2 border-red-500/30 bg-background/80 backdrop-blur-sm flex items-center justify-center hover:border-red-500 hover:bg-red-500/10 transition-all duration-300 group"
@@ -242,7 +242,7 @@ export default function HeroSection() {
             </motion.a>
 
             <motion.a
-              href="https://github.com/assil-khaldi"
+              href="https://github.com/Assil10"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full border-2 border-red-500/30 bg-background/80 backdrop-blur-sm flex items-center justify-center hover:border-red-500 hover:bg-red-500/10 transition-all duration-300 group"

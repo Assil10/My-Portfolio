@@ -20,7 +20,7 @@ const notoSerif = Noto_Serif({
 
 export const metadata: Metadata = {
   title: "Assil Khaldi - Samurai Developer",
-  description: "Creative Developer & AI Enthusiast - Portfolio",
+  description: "Full Stack Developer & AI Enthusiast - Portfolio",
     generator: 'v0.dev'
 }
 

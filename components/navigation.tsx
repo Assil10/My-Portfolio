@@ -12,6 +12,7 @@ const navItems = [
   { name: "Journey", href: "#timeline", kanji: "旅" },
   { name: "Projects", href: "#projects", kanji: "作品" },
   { name: "Skills", href: "#skills", kanji: "技" },
+  { name: "Testimonials", href: "#testimonials", kanji: "証言" },
   { name: "Contact", href: "#contact", kanji: "連絡" },
 ]
 
