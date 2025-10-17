@@ -10,7 +10,7 @@ export default function LoadingScreen() {
   useEffect(() => {
     const timer = setInterval(() => {
       setProgress((prev) => {
-        const newProgress = prev + 1.9
+        const newProgress = prev + 4.5
         if (newProgress >= 100) {
           clearInterval(timer)
           return 100

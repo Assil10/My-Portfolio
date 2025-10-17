@@ -6,25 +6,25 @@ import { Star, Quote } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Sarah Chen",
+    name: "mostafa rahmani",
     role: "Tech Lead at InnovateCorp",
     content: "Assil demonstrates a strong ability to build practical AI solutions. His work is clean, efficient, and reliable.",
     rating: 5,
-    avatar: "/placeholder.svg?height=60&width=60",
+    avatar: "/80.jpg",
   },
   {
-    name: "Marcus Rodriguez",
-    role: "CTO at StartupX",
+    name: "Ahmed jaziri",
+    role: "Project manager at Korpor",
     content: "Working with Assil has been a pleasure. He is precise, disciplined, and consistently delivers high-quality code.",
     rating: 5,
-    avatar: "/placeholder.svg?height=60&width=60",
+    avatar: "/92.jpg",
   },
   {
-    name: "Dr. Yuki Tanaka",
+    name: "youssef zouari",
     role: "AI Research Director",
     content: "Assil’s expertise in both AI and software engineering allows him to create innovative solutions that balance functionality with elegance.",
     rating: 5,
-    avatar: "/placeholder.svg?height=60&width=60",
+    avatar: "/104.jpg",
   },
 ]
 

@@ -39,7 +39,7 @@ export default function SamuraiPortfolioV7() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 2000)
+    }, 1500)
 
     return () => clearTimeout(timer)
   }, [])
@@ -481,13 +481,13 @@ function SkillsSection() {
 }
 
 // Enhanced Contact Section with improved gradients
-function ContactSection() {
+ function ContactSection() {
   return (
     <section
       id="contact"
       className="py-20 px-4 dark:bg-gradient-to-b dark:from-gray-900/50 dark:via-black/30 dark:to-gray-900/50 bg-gradient-to-b from-orange-100/80 via-amber-50/60 to-orange-100/80 relative overflow-hidden"
     >
-      {/* Enhanced Animated Particles with better blending */}
+      {/* Animated Particles */}
       <div className="absolute inset-0 pointer-events-none">
         {[...Array(30)].map((_, i) => (
           <motion.div
@@ -529,10 +529,13 @@ function ContactSection() {
             whileInView={{ width: 80 }}
             transition={{ duration: 1, delay: 0.5 }}
           />
-          <p className="dark:text-gray-400 text-gray-600 text-lg">Ready to forge something extraordinary together?</p>
+          <p className="dark:text-gray-400 text-gray-600 text-lg">
+            Ready to forge something extraordinary together?
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
+          {/* Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -559,14 +562,19 @@ function ContactSection() {
                   <contact.icon className="w-6 h-6 text-red-400" />
                 </motion.div>
                 <div>
-                  <h3 className="text-lg font-semibold group-hover:text-red-400 transition-colors">{contact.title}</h3>
+                  <h3 className="text-lg font-semibold group-hover:text-red-400 transition-colors">
+                    {contact.title}
+                  </h3>
                   <p className="dark:text-gray-400 text-gray-600">{contact.info}</p>
                 </div>
               </motion.div>
             ))}
           </motion.div>
 
+          {/* Contact Form (Formspree) */}
           <motion.form
+            action="https://formspree.io/f/mrbyjjkl"
+            method="POST"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -575,25 +583,40 @@ function ContactSection() {
           >
             <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
               <Input
+                name="name"
                 placeholder="Your Name"
+                required
                 className="dark:bg-gray-900/80 dark:border-gray-700 bg-white/90 border-gray-300 focus:border-red-500 placeholder-gray-500 h-12 backdrop-blur-sm"
               />
             </motion.div>
+
             <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
               <Input
+                name="email"
                 type="email"
                 placeholder="Your Email"
+                required
                 className="dark:bg-gray-900/80 dark:border-gray-700 bg-white/90 border-gray-300 focus:border-red-500 placeholder-gray-500 h-12 backdrop-blur-sm"
               />
             </motion.div>
+
             <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
               <Textarea
+                name="message"
                 placeholder="Your Message"
                 rows={5}
+                required
                 className="dark:bg-gray-900/80 dark:border-gray-700 bg-white/90 border-gray-300 focus:border-red-500 placeholder-gray-500 resize-none backdrop-blur-sm"
               />
             </motion.div>
-            <Button className="w-full bg-gradient-to-r from-red-500 via-orange-500 to-red-600 hover:from-red-600 hover:via-orange-600 hover:to-red-700 text-white font-semibold py-3 h-12 group relative overflow-hidden shadow-lg hover:shadow-red-500/25 transition-all duration-300">
+
+            {/* Optional redirect after submit */}
+            <input type="hidden" name="_next" value="https://yourdomain.com/thank-you" />
+
+            <Button
+              type="submit"
+              className="w-full bg-gradient-to-r from-red-500 via-orange-500 to-red-600 hover:from-red-600 hover:via-orange-600 hover:to-red-700 text-white font-semibold py-3 h-12 group relative overflow-hidden shadow-lg hover:shadow-red-500/25 transition-all duration-300"
+            >
               <motion.div
                 className="absolute inset-0 bg-gradient-to-r from-red-400 via-orange-400 to-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
                 whileHover={{ scale: 1.05 }}
@@ -617,7 +640,9 @@ function ContactSection() {
           <motion.p className="text-red-400 text-lg font-mono mb-2" whileHover={{ scale: 1.05 }}>
             出会いは人生の宝
           </motion.p>
-          <p className="dark:text-gray-500 text-gray-600 text-sm">"Encounters are life's treasures"</p>
+          <p className="dark:text-gray-500 text-gray-600 text-sm">
+            "Encounters are life's treasures"
+          </p>
         </motion.div>
       </div>
     </section>
