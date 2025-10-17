@@ -7,33 +7,34 @@ import { Calendar, Code, Brain, Rocket } from "lucide-react"
 const timelineEvents = [
   {
     year: "2018",
-    title: "The Beginning",
-    description: "Started my journey into programming with Python and web development",
+    title: "Programming Foundations",
+    description: "Began my programming journey, learning Python and web development fundamentals.",
     icon: Code,
     color: "from-blue-500 to-cyan-500",
   },
   {
     year: "2020",
-    title: "AI Awakening",
-    description: "Discovered machine learning and began exploring neural networks",
+    title: "Exploring AI & Machine Learning",
+    description: "Dived into machine learning and neural networks, building foundational AI skills.",
     icon: Brain,
     color: "from-purple-500 to-pink-500",
   },
   {
     year: "2022",
-    title: "Full Stack Mastery",
-    description: "Mastered modern web technologies and cloud architecture",
+    title: "Full Stack Development",
+    description: "Achieved mastery in modern web technologies, cloud architecture, and full-stack development.",
     icon: Rocket,
     color: "from-green-500 to-emerald-500",
   },
   {
     year: "2024",
-    title: "AI Innovation",
-    description: "Leading AI-powered projects and building the future",
+    title: "AI Leadership",
+    description: "Leading AI-driven projects, driving innovation, and shaping the future of technology.",
     icon: Brain,
     color: "from-red-500 to-orange-500",
   },
 ]
+
 
 export default function TimelineSection() {
   return (

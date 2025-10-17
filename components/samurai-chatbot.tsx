@@ -20,40 +20,57 @@ interface Message {
 
 const botPersonality = {
   greeting: [
-    "Greetings, fellow warrior. I am Sensei Assil's digital spirit. How may I guide you on your path?",
-    "Welcome to my digital dojo. I sense you seek knowledge about the way of code. What wisdom do you require?",
-    "Ah, a visitor approaches my virtual shrine. I am here to share the teachings of Assil-san. What brings you to this path?",
+    "Hello! I’m Assil’s digital assistant. How can I help you today?",
+    "Welcome! I can answer questions about Assil’s skills, projects, or philosophy on software development.",
+    "Hi there! Ask me anything about Assil’s experience, projects, or technical expertise.",
   ],
   about: [
-    "Assil-san walks the path of the warrior-developer, where discipline meets innovation. Like a ronin between worlds, he crafts digital solutions with the precision of a master swordsmith.",
-    "Master Assil follows the way of 心技体 (shin-gi-tai) - mind, technique, and body in harmony. His code reflects the samurai principles of honor, precision, and continuous improvement.",
-    "In the tradition of ancient craftsmen, Assil-san approaches each project as a work of art, balancing Eastern philosophy with Western technology.",
+    "Assil is a software developer with expertise in full-stack development, AI, and blockchain. He focuses on building efficient, scalable, and user-friendly solutions.",
+    "With a strong foundation in modern technologies, Assil combines technical skills with creative problem-solving to deliver quality software.",
+    "Assil is passionate about continuous learning and innovation, always seeking to improve both his skills and the products he builds.",
   ],
   skills: [
-    "The master has honed his skills across many disciplines: React-jutsu, AI-do, and the sacred art of Full-Stack-fu. Each technology is like a different sword style - mastered through dedicated practice.",
-    "Assil-san's arsenal includes the ancient arts of frontend development, the mystical powers of artificial intelligence, and the cloud techniques of modern digital warfare.",
-    "Like a samurai who masters multiple weapons, our sensei has achieved proficiency in React, Python, AI/ML, blockchain, and cloud architecture. Each skill sharpened through years of disciplined practice.",
+    "Assil is proficient in React, Node.js, Python, Solidity, and MongoDB. He also has experience with AI/ML and cloud technologies.",
+    "His skill set includes full-stack web development, smart contract development, AI integration, and building scalable applications.",
+    "Assil has hands-on experience with front-end frameworks, back-end APIs, databases, and blockchain technologies, enabling him to handle end-to-end development.",
   ],
   projects: [
-    "Each of Master Assil's projects is forged like a katana - with patience, precision, and purpose. From AI dashboards to blockchain platforms, every creation reflects the samurai principle of perfection through practice.",
-    "The master's portfolio showcases the harmony between functionality and beauty. His AI-powered dashboards cut through data complexity like a sharp blade through silk.",
-    "Assil-san's projects are not mere code, but digital poetry - each line written with intention, each interface designed with the user's journey in mind.",
+    "Assil has worked on projects including AI dashboards, blockchain platforms, and mobile applications that optimize user experience and performance.",
+    "His portfolio demonstrates practical applications of technology, from full-stack web apps to AI-powered tools.",
+    "Each project is built with scalability, maintainability, and usability in mind, ensuring long-term value for users.",
   ],
   philosophy: [
-    "The way of the code samurai teaches us that true mastery comes not from knowing all techniques, but from understanding when and how to apply them with wisdom.",
-    "As the ancient saying goes: '継続は力なり' (Continuity is strength). Master Assil believes that consistent practice and continuous learning are the foundations of excellence.",
-    "In the digital realm, as in the way of the sword, one must maintain balance between innovation and tradition, speed and precision, complexity and simplicity.",
+    "Assil believes that consistent practice, learning, and applying best practices are key to professional growth.",
+    "He values clean, maintainable code and believes in balancing innovation with reliability.",
+    "Continuous improvement, collaboration, and understanding user needs are central to how Assil approaches software development.",
   ],
   contact: [
-    "To forge a partnership with Master Assil, one must demonstrate honor and clear purpose. Scroll to the contact section below, where you may present your quest.",
-    "The master welcomes worthy collaborations. Approach with respect and clarity of purpose, and you shall find a dedicated ally in your digital endeavors.",
+    "You can reach Assil via the contact form or email. He’s open to collaborations, internships, and professional connections.",
+    "For inquiries about projects or partnerships, please get in touch with Assil using the contact section.",
+    "Assil welcomes meaningful conversations and collaborations that align with his expertise and interests.",
   ],
   farewell: [
-    "May your code compile without errors, and your deployments be swift as the wind. Until we meet again, fellow warrior.",
-    "Go forth with the wisdom of the ancients and the tools of the future. The path of continuous learning awaits you.",
-    "Remember: 道は歩くことによって作られる (The path is made by walking). Honor and good fortune on your journey.",
+    "Thank you for stopping by. Feel free to reach out anytime.",
+    "Goodbye! Wishing you success in your endeavors.",
+    "Take care! Assil looks forward to collaborating or sharing knowledge with you in the future.",
+  ],
+  advice: [
+    "When building software, focus on clean, maintainable code and keep the user experience in mind.",
+    "Learning new technologies is important, but understanding fundamentals will make you more adaptable.",
+    "Collaboration and communication are as important as technical skills in software development.",
+  ],
+  career: [
+    "Assil is currently seeking opportunities to work on innovative full-stack or AI projects.",
+    "His career goals involve building impactful software solutions and continuously improving his technical expertise.",
+    "He is open to collaboration on projects that leverage modern technologies to solve real-world problems.",
+  ],
+  misc: [
+    "Could you clarify your question so I can provide a better response?",
+    "I’m here to answer questions about Assil’s skills, projects, or career.",
+    "Feel free to ask me about development technologies, project experience, or professional advice.",
   ],
 }
+
 
 export default function SamuraiChatbot() {
   const [isOpen, setIsOpen] = useState(false)

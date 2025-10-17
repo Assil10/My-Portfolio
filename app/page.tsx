@@ -137,8 +137,7 @@ function AboutSection() {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
-              Like a samurai perfects their craft through discipline and dedication, I approach development as an art
-              form. Every line of code is written with precision, every interface designed with purpose.
+              I approach software development with discipline and precision, ensuring that every line of code is purposeful and every interface is thoughtfully designed.
             </motion.p>
             <motion.p
               className="text-lg dark:text-gray-300 text-gray-700 leading-relaxed"
@@ -219,12 +218,12 @@ function ProjectsSection() {
     demo: "https://ai-dashboard-demo.vercel.app", 
     },
     {
-      title: "Neural Network Visualizer",
-      description: "Interactive tool for understanding deep learning models and neural architectures",
+      title: "Voice Personality Analysis System",
+      description: "A comprehensive **multi-modal voice personality analysis system that combines voice characteristics, sentiment analysis, and topic clustering to provide deep insights into personality traits through audio analysis",
       tech: ["Vue.js", "Three.js", "Python", "FastAPI"],
-      image: "/placeholder.svg?height=300&width=500",
+      image: "/voice.png",
       featured: false,
-      github: "https://github.com/yourusername/ai-dashboard", // 🧠 Add this
+      github: "https://github.com/Assil10/Voice-Personality-Analysis-System", // 🧠 Add this
     demo: "https://ai-dashboard-demo.vercel.app", 
     },
     {

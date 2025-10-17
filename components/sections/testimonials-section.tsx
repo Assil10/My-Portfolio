@@ -8,26 +8,26 @@ const testimonials = [
   {
     name: "Sarah Chen",
     role: "Tech Lead at InnovateCorp",
-    content: "Assilo's approach to AI development is both innovative and practical. His code is poetry in motion.",
+    content: "Assil demonstrates a strong ability to build practical AI solutions. His work is clean, efficient, and reliable.",
     rating: 5,
     avatar: "/placeholder.svg?height=60&width=60",
   },
   {
     name: "Marcus Rodriguez",
     role: "CTO at StartupX",
-    content:
-      "Working with Assilo was like having a samurai on our development team - precise, disciplined, and masterful.",
+    content: "Working with Assil has been a pleasure. He is precise, disciplined, and consistently delivers high-quality code.",
     rating: 5,
     avatar: "/placeholder.svg?height=60&width=60",
   },
   {
     name: "Dr. Yuki Tanaka",
     role: "AI Research Director",
-    content: "His understanding of both Eastern philosophy and Western technology creates truly unique solutions.",
+    content: "Assil’s expertise in both AI and software engineering allows him to create innovative solutions that balance functionality with elegance.",
     rating: 5,
     avatar: "/placeholder.svg?height=60&width=60",
   },
 ]
+
 
 export default function TestimonialsSection() {
   return (
